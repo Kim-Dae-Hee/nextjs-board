@@ -56,7 +56,7 @@ Modal은 React Portal로 구현다. <br />
 
 ## 2. 개발하면서 흥미로웠던 점
 
-### 2-1. 북마크 등록할 때, 화면에 적용하는데 10초 넘게 걸림
+### 2-1. 북마크 등록할 때, 화면에 이미지가 바뀌는데 10초 넘게 걸림
 #### 증상
 * 북마크를 등록해서 화면에 나타는데 10초 이상 걸림
 
@@ -76,3 +76,7 @@ optimisticData 옵션으로 UI에 데이터를 즉시 반영하고 <br />
 
 <br />
 <img src="./readme-img/mutate.png" width="800" height="150"/>
+
+## 3. 마무리
+해당 내용은 아래 URL에서 확인할 수 있다. <br />
+URL : https://nextjs-board-eight.vercel.app/
