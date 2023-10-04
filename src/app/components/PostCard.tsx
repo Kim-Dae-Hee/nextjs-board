@@ -58,7 +58,7 @@ export default function PostCard({ post, modal = false }: Props) {
       </div>
       <div
         className={`relative w-full border-b-1 aspect-square ${
-          !modal ? "h-[20rem]" : "sm:h-[10rem] md:h-[30rem]"
+          !modal ? "h-[20rem] md:h-[15rem]" : "h-[15rem] md:h-[30rem]"
         }`}
       >
         <Image className="object-cover" src={image} alt={`${username}`} fill />
