@@ -44,12 +44,12 @@ export default function PostCard({ post, modal = false }: Props) {
     setTimeout(() => {
       // 2. postId의 post 제거
       post && deletePost(postId);  
-    }, 500);
+    }, 3000);
   }
 
   return (
     <section>
-      <div className="flex justify-between items-center px-4 py-2">
+      <div className="flex w-full justify-between items-center px-4 py-2">
         <h1 className="font-bold text-2xl py-2">{title}</h1>
         <div className="flex gap-4 items-center justify-center">
           <ProfileImage image={userImage ?? ""} />

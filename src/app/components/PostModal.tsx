@@ -16,13 +16,13 @@ export default function PostModal({ children, onClose }: Props) {
 
   return (
     <section
-      className="fixed inset-0 flex flex-col justify-center items-center w-full h-full bg-gray-600/70 z-50"
+      className="fixed top-0 left-0 flex flex-col justify-center items-center w-full h-full bg-gray-600/70 z-50"
       onClick={handleClose}
     >
       <button className="fixed top-0 right-0 p-6 text-white" onClick={onClose}>
         <CloseIcon />
       </button>
-      <div className="bg-neutral-100 border-4 rounded-lg w-4/5 h-4/5 max-w-3xl">
+      <div className="overflow-auto bg-neutral-100 border-4 rounded-lg w-4/5 h-4/5 max-w-4xl">
         {children}
       </div>
     </section>
