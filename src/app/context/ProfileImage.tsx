@@ -25,9 +25,9 @@ export default function ProfileImage({ image, size = "small" }: Props) {
 function getProfileImageSize(size: ProfileSize) {
   switch (size) {
     case "small":
-      return "w-12 h-12";
+      return "w-10 h-10";
     case "large":
-      return "w-18 h-18";
+      return "w-12 h-12";
     default:
       throw new Error("사이즈 타입이 맞지 않습니다.");
   }

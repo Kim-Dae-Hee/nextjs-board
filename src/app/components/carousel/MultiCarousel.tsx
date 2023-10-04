@@ -1,12 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import PostModalPortal from "../modal/PostModal";
-import PostModal from "../PostModal";
-import PostCard from "../PostCard";
-import { Post } from "@/model/post";
 
 const responsive = {
   superLargeDesktop: {
@@ -22,8 +17,8 @@ const responsive = {
     items: 2,
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
+    breakpoint: { max: 640, min: 0 },
+    items: 2,
   },
 };
 

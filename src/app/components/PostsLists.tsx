@@ -16,9 +16,9 @@ export default function PostsLists() {
     : [];
 
   return (
-    <section className="relative flex sm:flex-col sm:justify-center sm:items-center lg:flex-row lg:items-start mx-auto">
+    <section className="flex flex-col sm:justify-center sm:items-center lg:flex-row lg:items-start mx-auto">
       {isLoading && (
-        <div className="absolute pt-[20%]">
+        <div className="absolute inset-0 text-center pt-[30%]">
           <LoadingSpinner />
         </div>
       )}
@@ -33,7 +33,7 @@ export default function PostsLists() {
       </ul>
 
       {(posts && posts.length > 0) && (
-        <aside className="lg:w-1/5 sm:w-1/2 flex flex-col h-[10rem] rounded-lg m-auto my-10 mx-2 z-20">
+        <aside className="lg:w-1/5 sm:w-1/2 flex flex-col h-[10rem] rounded-lg m-auto my-10 mx-1 z-20">
           <p className="sm:text-2xl text-center font-bold mb-4">
             북마크 리스트
           </p>

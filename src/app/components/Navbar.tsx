@@ -35,21 +35,19 @@ export default function Navbar() {
                 : newPostInfo.noClickedIcon}
             </Link>
           </li>
-          <li>
+          <li className="mr-4">
             {user && (
-              <div className="sm:mr-2 md:mr-4">
-                <ProfileImage image={user.image} size='small' />
+              <div>
+                <ProfileImage image={user.image} size="small" />
               </div>
             )}
           </li>
           <li>
-            <div className="bg-gray-200 rounded-md">
-              {session ? (
-                <LoginAndOutButton text="Log Out" btnClick={() => signOut()} />
-              ) : (
-                <LoginAndOutButton text="Log In" btnClick={() => signIn()} />
-              )}
-            </div>
+            {session ? (
+              <LoginAndOutButton text="Log Out" btnClick={() => signOut()} />
+            ) : (
+              <LoginAndOutButton text="Log In" btnClick={() => signIn()} />
+            )}
           </li>
         </ul>
       </nav>

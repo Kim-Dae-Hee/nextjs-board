@@ -50,7 +50,7 @@ export default function PostCard({ post, modal = false }: Props) {
   return (
     <section>
       <div className="flex w-full justify-between items-center px-4 py-2">
-        <h1 className="font-bold text-2xl py-2">{title}</h1>
+        <h1 className="font-bold text-2xl py-2 whitespace-nowrap overflow-hidden text-ellipsis">{title}</h1>
         <div className="flex gap-4 items-center justify-center">
           <ProfileImage image={userImage ?? ""} />
           {userId === postRegistrar && modal && <DeletePostIcon deletePost={handlePost} modal />}

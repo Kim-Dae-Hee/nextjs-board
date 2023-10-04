@@ -19,7 +19,7 @@ export default function BookmarkedPost({ post }: Props) {
 
   return (
     <section>
-      <div className="relative aspect-square h-[6rem]">
+      <div className="relative aspect-square h-[5rem]">
         <Image
           onClick={toggleModal}
           className="rounded-full object-cover"
