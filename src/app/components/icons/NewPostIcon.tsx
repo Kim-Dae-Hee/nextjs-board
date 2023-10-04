@@ -1,5 +1,5 @@
 import { AiOutlineFileText } from "react-icons/ai";
 
 export default function NewPostIcon() {
-  return <AiOutlineFileText className='w-14 h-14' />;
+  return <AiOutlineFileText className='sm:w-6 sm:h-6 md:w-14 md:h-14' />;
 }

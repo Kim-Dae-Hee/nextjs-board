@@ -22,7 +22,7 @@ export default function Navbar() {
   return (
     <div className="flex justify-between px-10 py-4 items-center">
       <Link href="/">
-        <h1 className="text-4xl font-bold hover:scale-110 transition-all">
+        <h1 className="sm:text-xl md:text-4xl font-bold hover:scale-110 transition-all">
           Board
         </h1>
       </Link>
@@ -37,13 +37,13 @@ export default function Navbar() {
           </li>
           <li>
             {user && (
-              <div className="mr-4">
+              <div className="sm:mr-2 md:mr-4">
                 <ProfileImage image={user.image} size='small' />
               </div>
             )}
           </li>
           <li>
-            <div>
+            <div className="bg-gray-200 rounded-md">
               {session ? (
                 <LoginAndOutButton text="Log Out" btnClick={() => signOut()} />
               ) : (
