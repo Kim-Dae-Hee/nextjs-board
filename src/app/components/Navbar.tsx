@@ -20,9 +20,9 @@ export default function Navbar() {
   const user = session?.user;
 
   return (
-    <div className="flex justify-between px-10 py-4 items-center">
+    <div className="flex justify-between px-4 md:px-10 py-4 items-center">
       <Link href="/">
-        <h1 className="sm:text-xl md:text-4xl font-bold hover:scale-110 transition-all">
+        <h1 className="text-2xl md:text-4xl font-bold hover:scale-110 transition-all">
           Board
         </h1>
       </Link>
