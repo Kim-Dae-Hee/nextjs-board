@@ -32,7 +32,7 @@ export default function PostsLists() {
           ))}
       </ul>
 
-      {(posts && posts.length > 0) && (
+      {posts && posts.length > 0 && (
         <aside className="lg:w-1/5 sm:w-1/2 flex flex-col h-[10rem] rounded-lg m-auto my-10 mx-1 z-20">
           <p className="sm:text-2xl text-center font-bold mb-4">
             북마크 리스트
@@ -44,7 +44,9 @@ export default function PostsLists() {
               ))}
             </MultiCarousel>
           ) : (
-            <p className="px-4 text-center font-bold text-gray-400">북마크를 등록해주세요~</p>
+            <p className="px-4 text-center font-bold text-gray-400">
+              북마크를 등록해주세요~
+            </p>
           )}
         </aside>
       )}

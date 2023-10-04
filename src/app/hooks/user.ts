@@ -14,7 +14,12 @@ async function updateBookMark(
 }
 
 export default function useUser() {
-  const { data: user, isLoading, error, mutate } = useSWR<HomeUser>("/api/user");
+  const {
+    data: user,
+    isLoading,
+    error,
+    mutate,
+  } = useSWR<HomeUser>("/api/user");
 
   const setBookMark = useCallback(
     (userId: string, postId: string, bookmark: boolean) => {
@@ -31,7 +36,7 @@ export default function useUser() {
         optimisticData: addBookmarkedUser, // 해당 데이터를 UI에 바로 적용 - 추후에 revalidate 데이터 적용
         populateCache: false, //updateBookmark 함수 반환 값을 캐시로 사용하지 않는다.
         rollbackOnError: true,
-      })
+      });
     },
     [user, mutate]
   );

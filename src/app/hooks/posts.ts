@@ -21,6 +21,7 @@ export default function usePosts() {
 
   const deletePost = useCallback(
     (postId: string) => {
+      
       const removedPosts = posts?.filter((post) => post.postId !== postId);
       mutate(removePost(postId), {
         optimisticData: removedPosts, // 해당 데이터를 UI에 바로 적용 - 추후에 revalidate 데이터 적용
