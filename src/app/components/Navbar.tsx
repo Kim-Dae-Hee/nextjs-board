@@ -28,17 +28,17 @@ export default function Navbar() {
       </Link>
       <nav>
         <ul className="flex gap-2 items-center">
-          <li className="text-3xl mr-4 z-auto hover:scale-110 transition-all">
+          <li className="text-3xl z-auto hover:scale-110 transition-all">
             <Link href={newPostInfo.href}>
               {pathName === newPostInfo.href
                 ? newPostInfo.clickedIcon
                 : newPostInfo.noClickedIcon}
             </Link>
           </li>
-          <li className="mr-4">
+          <li className="sm:mr-2 md:mr-4">
             {user && (
               <div>
-                <ProfileImage image={user.image} size="small" />
+                <ProfileImage image={user.image} size="large" />
               </div>
             )}
           </li>
