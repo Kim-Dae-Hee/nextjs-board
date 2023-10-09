@@ -18,7 +18,7 @@ export default function PostsLists() {
   return (
     <section className="flex flex-col sm:justify-center sm:items-center lg:flex-row lg:items-start mx-auto">
       {isLoading && (
-        <div className="absolute inset-0 text-center pt-[10%]">
+        <div className="absolute inset-0 text-center pt-[20%]">
           <LoadingSpinner />
         </div>
       )}
