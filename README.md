@@ -2,7 +2,7 @@
 나만의 게시판으로
 반응형 웹으로 화면의 크기에 따라 다르게 보여주도록 구현하였다.<br />
 <br/>
-<img src="./readme-img/전체.png" width="80%" height="20%"/>
+<img src="./readme-img/전체.png" width="100%" height="100%"/>
 <br />
 
 # 사용기술
