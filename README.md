@@ -57,11 +57,11 @@ Modal은 React Portal로 구현다. <br />
 ## 2. 개발하면서 흥미로웠던 점
 
 ### 2-1. 북마크 등록할 때, 화면에 이미지가 바뀌는데 10초 넘게 걸림
+
+<img src="./readme-img/Bookmark.png" width="100%" height="100%"/>
+
 #### 증상
 * 북마크를 등록해서 화면에 나타는데 10초 이상 걸림
-
-<br />
-<img src="./readme-img/Bookmark.png" width="100%" height="100%"/>
 
 #### 원인
 * SWR은 데이터를 가져올 때, 아래와 같은 방식으로 동작하는데,
@@ -73,7 +73,6 @@ Modal은 React Portal로 구현다. <br />
 * mutate는 데이터를 언제 최신화 할지 도와주는 역할을 하는데, <br />
 optimisticData 옵션으로 UI에 데이터를 즉시 반영하고 <br />
 나중에 서버에서 재요청된 데이터를 반영하도록 함
-
 <br />
 <img src="./readme-img/mutate.png" width="100%" height="50%"/>
 
