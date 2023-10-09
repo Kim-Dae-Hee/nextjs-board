@@ -58,7 +58,7 @@ export default function PostCard({ post, modal = false }: Props) {
       </div>
       <div
         className={`relative w-full border-b-1 aspect-square ${
-          !modal ? "h-[20rem] md:h-[15rem]" : "h-[15rem] md:h-[30rem]"
+          !modal ? "h-[40vh] md:h-[25vh]" : "h-[40vh] md:h-[50vh]"
         }`}
       >
         <Image className="object-cover" src={image} alt={`${username}`} fill />
@@ -72,7 +72,7 @@ export default function PostCard({ post, modal = false }: Props) {
         />
         <p className="text-md text-sky-600">{parseDate(createdAt)}</p>
       </div>
-      <div className="max-h-[10rem] px-4 py-4 text-lg overflow-y-auto">
+      <div className="min-h-[100%] px-4 py-4 text-lg overflow-y-auto">
         <p>{!modal ? content.slice(0, 5) + "....." : content}</p>
       </div>
     </section>
