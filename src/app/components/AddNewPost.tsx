@@ -83,7 +83,7 @@ export default function AddNewPost() {
         </p>
       )}
       
-      <h1 className="font-bold text-2xl md:text-4xl text-gray-500 mb-8">새로운 board 등록</h1>
+      <h1 className="font-bold text-2xl md:text-4xl text-gray-500 mb-2">새로운 board 등록</h1>
       <form className="flex flex-col w-full mt-4" onSubmit={handleSubmit}>
         <input
           className="px-2 h-20 font-bold rounded-t-lg outline-none text-2xl bg-transparent border border-neutral-300"
