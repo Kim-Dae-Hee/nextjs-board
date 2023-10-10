@@ -46,7 +46,7 @@ CSS로 Tailwind를 이용했는데, 반응형 웹을 구현하는데 코드가 �
 <img src="./readme-img/SWR.png" width="50%" height="30%"/>
 
 ### 1-5 Portal
-Modal은 React Portal로 구현다. <br />
+Modal은 React Portal로 구현했다. <br />
 해당 기능도 좋은 자료가 있어 참고하였다.
 <br />
 <img src="./readme-img/ReactPortal.png" width="100%" height="100%"/>
