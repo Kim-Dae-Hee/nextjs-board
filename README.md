@@ -78,4 +78,5 @@ optimisticData 옵션으로 UI에 데이터를 즉시 반영하고 <br />
 
 ## 3. 마무리
 해당 내용은 아래 URL에서 확인할 수 있다. <br />
-URL : https://nextjs-board-eight.vercel.app/
+URL : https://nextjs-board-eight.vercel.app/ <br/>
+(크롬으로 접속 필요)
